@@ -1,3 +1,4 @@
+// index.js
 const express = require("express");
 const dotenv = require("dotenv");
 const { createClient } = require("redis");
@@ -13,7 +14,7 @@ const app = express();
 app.use(cors()); // Configure CORS
 app.use(express.json());
 
-const PORT = 3000;
+const PORT = 5000;
 
 const client = createClient({
   password: "B5oQhU80mwWzh9et3846X5R6DSoknwpn",
